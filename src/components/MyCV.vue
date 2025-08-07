@@ -197,7 +197,7 @@ const downloadCV = () => {
 
 <style scoped>
 .cv-section {
-  background: var(--secondary-bg);
+  background: #111111;
 }
 
 .section-header {

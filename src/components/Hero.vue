@@ -44,30 +44,6 @@
 
 </template>
 
-<script setup lang="ts">
-const scrollToContact = () => {
-  const element = document.getElementById('contact')
-  if (element) {
-    const offsetTop = element.offsetTop - 80
-    window.scrollTo({
-      top: offsetTop,
-      behavior: 'smooth'
-    })
-  }
-}
-
-const scrollToWorks = () => {
-  const element = document.getElementById('works')
-  if (element) {
-    const offsetTop = element.offsetTop - 80
-    window.scrollTo({
-      top: offsetTop,
-      behavior: 'smooth'
-    })
-  }
-}
-</script>
-
 <style scoped>
 
 /* new */
@@ -112,7 +88,7 @@ const scrollToWorks = () => {
 
 .hero-text p {
   font-size: 1.125rem;
-  color: #4b5563;
+  color: #727a85;
   margin-bottom: 2rem;
 }
 
