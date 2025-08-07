@@ -41,9 +41,9 @@ const qualities = ref<Quality[]>([
     title: "Professionalism",
     description: "I deliver high-quality work on time, maintain clear communication throughout projects, and always exceed client expectations with attention to detail.",
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-      <path d="M20 6L9 17L4 12" stroke="url(#gradient1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M21 15A2 2 0 0 1 19 17H7L4 20V6A2 2 0 0 1 6 4H19A2 2 0 0 1 21 6V15Z" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <defs>
-        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" style="stop-color:#a855f7"/>
           <stop offset="100%" style="stop-color:#f472b6"/>
         </linearGradient>
@@ -74,20 +74,6 @@ const qualities = ref<Quality[]>([
       <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="url(#gradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <defs>
         <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#a855f7"/>
-          <stop offset="100%" style="stop-color:#f472b6"/>
-        </linearGradient>
-      </defs>
-    </svg>`
-  },
-  {
-    id: 4,
-    title: "Communication",
-    description: "I believe in transparent collaboration, regular updates, and turning complex design concepts into clear, actionable insights for clients.",
-    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-      <path d="M21 15A2 2 0 0 1 19 17H7L4 20V6A2 2 0 0 1 6 4H19A2 2 0 0 1 21 6V15Z" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <defs>
-        <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" style="stop-color:#a855f7"/>
           <stop offset="100%" style="stop-color:#f472b6"/>
         </linearGradient>
