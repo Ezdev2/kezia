@@ -78,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 
 interface WorkItem {
   id: number
@@ -266,15 +266,6 @@ const filteredWorks = computed(() => {
 const setActiveCategory = (categoryId: string) => {
   activeCategory.value = categoryId
 }
-
-onMounted(() => {
-  // Initialize AOS for new elements
-  setTimeout(() => {
-    if (window.AOS) {
-      window.AOS.refresh()
-    }
-  }, 100)
-})
 </script>
 
 <style scoped>
