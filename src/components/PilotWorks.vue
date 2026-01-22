@@ -103,7 +103,7 @@ const pilotWorks = ref<PilotWork[]>([
 
 <style scoped>
 .pilot-works-section {
-  background: #111111;
+  background: #11111170;
 }
 
 .section-header {

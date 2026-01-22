@@ -1,11 +1,15 @@
 <template>
   <div class="home-page">
-    <Hero />
-    <PilotWorks />
-    <WhyMe />
-    <MyCV />
-    <ContactForm />
-    <Footer />
+    <div class="noise-overlay"></div>
+    
+    <div class="content-wrapper">
+      <Hero />
+      <PilotWorks />
+      <WhyMe />
+      <MyCV />
+      <ContactForm />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -19,7 +23,45 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <style scoped>
-.home-page {
+  .home-page {
   min-height: 100vh;
+  position: relative;
+  background-color: #0b0e14;
+  background-image: url("../assets/bg.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Overlay */
+.home-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 14, 20, 0.8);
+  z-index: 0;
+}
+
+/* Contenu au-dessus */
+.home-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.04;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
 }
 </style>
